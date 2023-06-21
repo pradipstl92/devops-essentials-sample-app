@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_devops_essentials_sample_app_1687362266299-pr-trigger-input-set
+  identifier: Build_devops_essentials_sample_app_1687362266299prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_devops_essentials_sample_app_1687362266299
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
