@@ -22,12 +22,19 @@ pipeline:
                   name: echo
                   spec:
                     command: echo hello world
+                    shell: Sh
                   timeout: ""
                   type: Run
+                  description: hello pradip
+              - step:
+                  type: ArtifactoryUpload
+                  name: ArtifactoryUpload_1
+                  identifier: ArtifactoryUpload_1
+                  spec: {}
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
+            type: Docker
             spec: {}
-            type: Cloud
         type: CI
